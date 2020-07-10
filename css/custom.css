@@ -342,6 +342,10 @@ ol {
 
 /* ======= Hero ======= */
 .hero {
+	background: url(../images/cover1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 	/* padding-top: 400px; */
 	padding-bottom: 295px;
 	position: relative;
@@ -393,7 +397,9 @@ ol {
 	margin-bottom: 20px;
 }
 
-.hero__text #playpausebtn{}
+.hero__text #playpausebtn{
+	display: none;
+}
 
 .hero__text .play-btn {
 	font-size: 26px;
@@ -531,7 +537,6 @@ ol {
 
 /* ======= Track ======= */
 .track {
-	padding-top: 120px;
 	padding-bottom: 40px;
 	overflow: hidden;
 }
@@ -758,7 +763,11 @@ ol {
 		inset -5px -5px 10px rgba(204, 204, 204, 0.486);
 
 }
-
+.contact .info img{
+	height: 200px;
+	width: 200px;
+	border-radius: 100%;
+}
 .contact .info i {
 	font-size: 48px;
 	margin: 15px;
@@ -1119,8 +1128,13 @@ ol {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+	.hero{
+		background: url(../images/cover1.jpg);
+		background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
 	.social__links {
-
 		top: 20%;
 		left: 87%;
 
@@ -1132,8 +1146,15 @@ ol {
 }
 
 @media only screen and (max-width: 479px) {
+	.hero{
+		background: url(../images/cover4.jpg);
+		background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
 	.hero__text h1 {
-		font-size: 50px;
+		/* margin-top: 50px; */
+		font-size: 40px;
 	}
 
 	.social__links {
@@ -1141,6 +1162,13 @@ ol {
 		top: 20%;
 		left: 80%;
 
+	}
+	.profile_pic{
+		margin-top: -40px;
+	}
+	.profile_pic img{
+		height: 100px;
+		width: 100px;
 	}
 
 	.single_player_container h4 {
@@ -1169,5 +1197,12 @@ ol {
 		width: 55px;
 	}
 }
-
+@media only screen and (max-width: 320px) {
+	.hero{
+		background: url(../images/cover4.jpg);
+		background-position: center;
+	background-repeat: no-repeat;
+	/* background-size: cover; */
+	}
+}
 /* ======= End_Responsive ======= */
