@@ -12,6 +12,32 @@ $('.set-bg').each(function () {
 });
 // End_Background_Set
 
+// Play Button
+var audio, playbtn, seek_bar;
+function initAudioPlayer(){
+  audio = new Audio();
+  audio.src = "music-files/main.m4a";
+  audio.loop = false;
+  audio.play();
+
+  playbtn = document.getElementById("playpausebtn");
+
+  playbtn.addEventListener("click", playpause);
+
+  function playpause(){
+    if(audio.paused){
+      audio.play();
+      playbtn.style.background = "url(../images/pause.png) no-repeat";
+    }
+    else{
+      audio.pause();
+      playbtn.style.background = "url(../images/pause.png) no-repeat";
+    }
+  }
+}
+window.addEventListener("load", initAudioPlayer);
+// Play Button
+
 // Nav
 $(document).ready(function () {
   $('.menu_toggler').on('click', function () {

@@ -365,8 +365,8 @@ ol {
 	display: flex;
 	justify-self: flex-start;
 	align-self: flex-start;
-	width: 150px;
-	height: 150px;
+	width: 250px;
+	height: 250px;
 	border-radius: 100%;
 }
 
@@ -392,6 +392,8 @@ ol {
 	color: #ffffff;
 	margin-bottom: 20px;
 }
+
+.hero__text #playpausebtn{}
 
 .hero__text .play-btn {
 	font-size: 26px;
