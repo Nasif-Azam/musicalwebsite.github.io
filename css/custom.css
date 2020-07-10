@@ -322,6 +322,14 @@ ol {
 	transform: rotate(-450deg) translateX(-.8rem);
 }
 
+@media (max-width: 768.98px) {
+	.menu_toggler {
+		top: 10px;
+		right: 10px;
+		height: 2.5rem;
+		width: 3.5rem;
+	}
+}
 @media (max-width: 575.98px) {
 	.menu_toggler {
 		top: 20px;
@@ -369,12 +377,17 @@ ol {
 	display: flex;
 	justify-self: flex-start;
 	align-self: flex-start;
-	width: 250px;
-	height: 250px;
+	width: 200px;
+	height: 200px;
+	margin-top: -40px;
 	border-radius: 100%;
 }
 
+.hero__text h1{
+	/* padding-bottom: 189px; */
+}
 .hero__text {
+	
 	text-align: center;
 }
 
@@ -454,7 +467,7 @@ ol {
 	border: 0;
 	width: 35px;
 	height: 35px;
-	margin: 10px;
+	margin: 5px;
 	border-radius: 100%;
 	box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.486),
 		inset -5px -5px 10px rgba(0, 0, 0, 0.486);
@@ -1120,7 +1133,6 @@ ol {
 	}
 
 	.social__links {
-
 		top: 20%;
 		left: 90%;
 
@@ -1134,9 +1146,13 @@ ol {
 	background-repeat: no-repeat;
 	background-size: cover;
 	}
+	.profile_pic img{
+		height: 200px;
+		width: 200px;
+	}
 	.social__links {
-		top: 20%;
-		left: 87%;
+		top: 15%;
+		left: 92%;
 
 	}
 
@@ -1153,18 +1169,12 @@ ol {
 	background-size: cover;
 	}
 	.hero__text h1 {
-		/* margin-top: 50px; */
-		font-size: 40px;
+		font-size: 35px;
 	}
 
 	.social__links {
-
-		top: 20%;
-		left: 80%;
-
-	}
-	.profile_pic{
-		margin-top: -40px;
+		top: 15%;
+		left: 90%;
 	}
 	.profile_pic img{
 		height: 100px;
@@ -1202,7 +1212,11 @@ ol {
 		background: url(../images/cover4.jpg);
 		background-position: center;
 	background-repeat: no-repeat;
-	/* background-size: cover; */
+	background-size: cover;
+	}
+	.social__links {
+		top: 15%;
+		left: 85%;
 	}
 }
 /* ======= End_Responsive ======= */
