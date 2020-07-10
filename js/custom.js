@@ -1,15 +1,15 @@
 // Preloader
-    $(window).on('load', function () {
-      $(".loader").fadeOut();
-      $("#preloder").delay(200).fadeOut("slow");
-  });
+$(window).on('load', function () {
+  $(".loader").fadeOut();
+  $("#preloder").delay(200).fadeOut("slow");
+});
 // End_ Preloader
 
 // Background Set
-    $('.set-bg').each(function () {
-      var bg = $(this).data('setbg');
-      $(this).css('background-image', 'url(' + bg + ')');
-  });
+$('.set-bg').each(function () {
+  var bg = $(this).data('setbg');
+  $(this).css('background-image', 'url(' + bg + ')');
+});
 // End_Background_Set
 
 // Nav

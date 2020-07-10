@@ -1,7 +1,8 @@
-/* Fonts */
+/* ======= Fonts ======= */
 @import url('https://fonts.googleapis.com/css2?family=Fondamento&family=Galada&display=swap');
+/* ======= End_Fonts ======= */
 
-/* Fonts */
+/* ======= Document ======= */
 html,
 body {
 	height: 100%;
@@ -23,7 +24,7 @@ h6 {
 }
 
 h1 {
-	font-size: 70px;
+	font-size: 50px;
 }
 
 h2 {
@@ -85,10 +86,9 @@ ol {
 	margin: 0;
 }
 
-/*---------------------
-  Helper CSS
------------------------*/
+/* ======= End_Document ======= */
 
+/* ======= Helper_CSS ======= */
 .section-title {
 	margin-bottom: 40px;
 	position: relative;
@@ -105,8 +105,6 @@ ol {
 	font-weight: 700;
 	text-transform: uppercase;
 }
-
-
 
 .set-bg {
 	background-repeat: no-repeat;
@@ -163,8 +161,7 @@ ol {
 	width: 100%;
 }
 
-/* Preloder */
-
+/* ======= Preloader ======= */
 #preloder {
 	position: fixed;
 	width: 100%;
@@ -231,9 +228,7 @@ ol {
 	}
 }
 
-
-
-
+/* ======= End_Preloader ======= */
 
 /* ======= Header ======= */
 .top_nav {
@@ -257,8 +252,6 @@ ol {
 	justify-content: space-around;
 	align-items: center;
 }
-
-
 
 .nav_link {
 	font-family: 'Galada', cursive;
@@ -329,8 +322,6 @@ ol {
 	transform: rotate(-450deg) translateX(-.8rem);
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {}
-
 @media (max-width: 575.98px) {
 	.menu_toggler {
 		top: 20px;
@@ -349,20 +340,13 @@ ol {
 
 /* ======= End_Header ======= */
 
-
-
-
-
-
-/*---------------------
-  Hero
------------------------*/
-
+/* ======= Hero ======= */
 .hero {
 	/* padding-top: 400px; */
 	padding-bottom: 295px;
 	position: relative;
 }
+
 .profile_pic {
 	display: flex;
 	justify-content: flex-start;
@@ -370,11 +354,13 @@ ol {
 	flex-direction: column;
 	margin-left: 15px;
 }
-.profile_pic h5{
+
+.profile_pic h5 {
 	display: inline-block;
-	
+
 }
-.profile_pic img{
+
+.profile_pic img {
 	position: relative;
 	display: flex;
 	justify-self: flex-start;
@@ -383,6 +369,7 @@ ol {
 	height: 150px;
 	border-radius: 100%;
 }
+
 .hero__text {
 	text-align: center;
 }
@@ -438,24 +425,17 @@ ol {
 	z-index: -1;
 }
 
-
-
-
-
 .social__links {
 	position: fixed;
-	 display: flex;
+	display: flex;
 	flex-direction: column;
-	/* align-items: flex-start; */
 	top: 15%;
 	left: 93%;
 	z-index: 1000;
-	/* transform: translateY(-80%); */
-	/* transform: translateX(1000%); */
-	
 }
+
 @media (max-width: 575.98px) {
-	.social__links{
+	.social__links {
 		left: 85%;
 	}
 }
@@ -468,13 +448,13 @@ ol {
 	height: 35px;
 	margin: 10px;
 	border-radius: 100%;
-	box-shadow: 0 5px 15px -5px #00000070;
+	box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.486),
+		inset -5px -5px 10px rgba(0, 0, 0, 0.486);
 	overflow: hidden;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	background: linear-gradient(50deg, #5c00ce 35%, #f71f9d);
 }
 
 .btn i {
@@ -484,11 +464,12 @@ ol {
 	color: #fff;
 }
 
-.btn:hover  {
-	background: linear-gradient(50deg, #f71f9d  35%, #5c00ce);
-  transition: all ease-in-out 650ms;
+.btn:hover {
+	background: rgba(0, 0, 0, 0.486);
+	transition: all ease-in-out 650ms;
 }
-.btn img{
+
+.btn img {
 	transform: scale(2.5);
 }
 
@@ -510,6 +491,7 @@ ol {
 	0% {
 		bottom: 0;
 	}
+
 	100% {
 		bottom: -10px;
 	}
@@ -519,61 +501,33 @@ ol {
 	0% {
 		bottom: 0;
 	}
+
 	100% {
 		bottom: -10px;
 	}
 }
 
-
-
-
+/* ======= End_Hero ======= */
 
 /* ======= About ======= */
-/*---------------------
-  About
------------------------*/
 
-.about {
-}
-/* 
-.about.about--page {
-	padding-top: 80px;
-	padding-bottom: 80px; */
-}
+.about {}
 
-.about.about--page .section-title {
-	/* margin-bottom: 28px; */
+.about.about--page .section-title {}
+
+.about.about--page .section-title h2 {}
+
+.about.about--page .about__text p {}
+
+.about__text a {
+	margin: 20px;
 }
 
-.about.about--page .section-title h2 {
-	line-height: 55px;
-}
-
-.about.about--page .about__text {
-	padding-top: 15px;
-}
-
-.about.about--page .about__text p {
-	color: #111111;
-}
-
-.about__text {
-	padding-top: 110px;
-}
-
-.about__text p {
-	margin-bottom: 35px;
-}
+.about__text p {}
 
 /* ======= End_About ======= */
 
-
-
-
-/*---------------------
-  Track
------------------------*/
-
+/* ======= Track ======= */
 .track {
 	padding-top: 120px;
 	padding-bottom: 40px;
@@ -752,14 +706,9 @@ ol {
 	height: 502px;
 }
 
+/* ======= End_Track ======= */
 
-
-
-
-/*---------------------
-  Youtube
------------------------*/
-
+/* ======= Youtube ======= */
 .youtube {
 	padding-bottom: 50px;
 }
@@ -784,20 +733,19 @@ ol {
 	box-shadow: 0px 3px 30px rgba(22, 41, 124, 0.1);
 }
 
-.youtube__item__video{
+.youtube__item__video {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
+
 .youtube__item__text {
 	padding: 25px 30px 20px 20px;
 	background: #ffffff;
 	text-align: center;
 }
 
-
-
-
+/* ======= End_Youtube ======= */
 
 /* ======= Contact ======= */
 .contact .info {
@@ -805,11 +753,11 @@ ol {
 	text-align: center;
 	border: 1px solid rgba(0, 0, 0, 0.445);
 	box-shadow: inset 5px 5px 10px rgba(204, 204, 204, 0.486),
-	  inset -5px -5px 10px rgba(204, 204, 204, 0.486);
-  
-  }
-  
-  .contact .info i {
+		inset -5px -5px 10px rgba(204, 204, 204, 0.486);
+
+}
+
+.contact .info i {
 	font-size: 48px;
 	margin: 15px;
 	height: 80px;
@@ -817,84 +765,84 @@ ol {
 	color: #6f11e2;
 	border-radius: 100%;
 	box-shadow: inset 5px 5px 10px rgba(204, 204, 204, 0.486),
-	  inset -5px -5px 10px rgba(204, 204, 204, 0.486);
+		inset -5px -5px 10px rgba(204, 204, 204, 0.486);
 	padding: 15px 0px;
-  }
-  
-  .contact .info h4 {
+}
+
+.contact .info h4 {
 	margin: 0 0 10px 0;
-	/* font-size: 16px; */
-  }
-  
-  .contact form .form-group label {
+}
+
+.contact form .form-group label {
 	color: #000;
 	font-weight: bold;
-  }
-  .contact form .form-group label i {
+}
+
+.contact form .form-group label i {
 	width: 35px;
 	height: 35px;
 	border-radius: 50%;
 	font-size: 18px;
 	color: #6f11e2;
 	box-shadow: inset 1px 1px 5px rgba(204, 204, 204, 0.486),
-	  inset -1px -1px 5px rgba(204, 204, 204, 0.486);
+		inset -1px -1px 5px rgba(204, 204, 204, 0.486);
 	text-align: center;
 	padding: 7px 0;
 	margin: 0 5px 0 0;
-  }
-  
-  .contact form .form-group input,
-  .contact form .form-group textarea {
+}
+
+.contact form .form-group input,
+.contact form .form-group textarea {
 	box-shadow: inset 2px 2px 10px rgba(34, 34, 34, 0.486),
-	  inset -2px -2px 10px rgba(34, 34, 34, 0.486);
+		inset -2px -2px 10px rgba(34, 34, 34, 0.486);
 	background: linear-gradient(140deg, #6f11e2 10%, #fff 0%);
 	color: #000;
 	border: none;
-  }
-  
-  .contact form .form-group input::placeholder,
-  .contact form .form-group textarea::placeholder {
+}
+
+.contact form .form-group input::placeholder,
+.contact form .form-group textarea::placeholder {
 	color: #333;
-  }
-  
-  .contact .php-email-form {
+}
+
+.contact .php-email-form {
 	width: 100%;
-  }
-  
-  .contact .php-email-form .validate {
+}
+
+.contact .php-email-form .validate {
 	display: none;
 	color: red;
 	margin: 0;
 	font-weight: 400;
 	font-size: 13px;
-  }
-  
-  .contact .php-email-form .error-message {
+}
+
+.contact .php-email-form .error-message {
 	display: none;
 	color: orange;
 	background: #ed3c0d;
 	text-align: center;
 	padding: 15px;
 	font-weight: 600;
-  }
-  
-  .contact .php-email-form .sent-message {
+}
+
+.contact .php-email-form .sent-message {
 	display: none;
 	color: orange;
 	background: #6f11e2;
 	text-align: center;
 	padding: 15px;
 	font-weight: 600;
-  }
-  
-  .contact .php-email-form .loading {
+}
+
+.contact .php-email-form .loading {
 	display: none;
 	background: transparent;
 	text-align: center;
 	padding: 15px;
-  }
-  
-  .contact .php-email-form .loading:before {
+}
+
+.contact .php-email-form .loading:before {
 	content: "";
 	display: inline-block;
 	border-radius: 50%;
@@ -905,21 +853,21 @@ ol {
 	border-top-color: #fff;
 	-webkit-animation: animate-loading 1s linear infinite;
 	animation: animate-loading 1s linear infinite;
-  }
-  
-  .contact .php-email-form label {
+}
+
+.contact .php-email-form label {
 	margin-bottom: 5px;
 	color: #8a8c95;
-  }
-  
-  .contact .php-email-form input,
-  .contact .php-email-form textarea {
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
 	border-radius: 0;
 	box-shadow: none;
 	font-size: 14px;
-  }
-  
-  .contact .php-email-form button[type="submit"] {
+}
+
+.contact .php-email-form button[type="submit"] {
 	font-size: 14px;
 	background: #6f11e2;
 	color: #fff;
@@ -927,60 +875,49 @@ ol {
 	transition: all ease-in-out 0.4s;
 	border: 0;
 	margin-top: 5px;
-  }
-  
-  .contact .php-email-form button[type="submit"]:hover {
+}
+
+.contact .php-email-form button[type="submit"]:hover {
 	transition: all ease-in-out 650ms;
-  }
-  
-  @media (max-width: 1024px) {
+}
+
+@media (max-width: 1024px) {
 	.contact .php-email-form {
-	  padding: 30px 15px 15px 15px;
+		padding: 30px 15px 15px 15px;
 	}
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
 	.contact .php-email-form {
-	  padding: 15px 0 0 0;
+		padding: 15px 0 0 0;
 	}
-  }
-  
-  @-webkit-keyframes animate-loading {
+}
+
+@-webkit-keyframes animate-loading {
 	0% {
-	  transform: rotate(0deg);
+		transform: rotate(0deg);
 	}
-  
+
 	100% {
-	  transform: rotate(360deg);
+		transform: rotate(360deg);
 	}
-  }
-  
-  @keyframes animate-loading {
+}
+
+@keyframes animate-loading {
 	0% {
-	  transform: rotate(0deg);
+		transform: rotate(0deg);
 	}
-  
+
 	100% {
-	  transform: rotate(360deg);
+		transform: rotate(360deg);
 	}
-  }
-  
-  /* ======= End_Contact======= */
+}
 
-  
+/* ======= End_Contact======= */
 
-
-  
-/*---------------------
-  Footer
------------------------*/
-
+/* ======= Footer ======= */
 .footer {
 	background: #6300dda4;
-	/* padding-top: 300px;
-	padding-bottom: 60px;
-	margin-top: -547px;
-	height: 549px; */
 }
 
 .footer.footer--normal {
@@ -1061,14 +998,10 @@ ol {
 }
 
 .footer__social .footer__social__links a {
-	font-size: 18px;
-	color: #5c00ce;
-	height: 50px;
-	width: 50px;
-	background: #ffffff;
-	border-radius: 50%;
-	line-height: 50px;
-	text-align: center;
+	height: 40px;
+	width: 40px;
+	border: 5px solid rgba(0, 0, 0, 0.274);
+	border-radius: 100%;
 	display: inline-block;
 	margin-right: 10px;
 }
@@ -1155,75 +1088,84 @@ ol {
 	color: #c11;
 }
 
+/* ======= End_Footer ======= */
 
-
-
-/*--------------------------------- Responsive Media Quaries -----------------------------*/
-
+/* ======= Responsive ======= */
 @media only screen and (min-width: 1200px) {
 	.container {
 		max-width: 1170px;
 	}
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px){
-	.hero__text h1{
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.hero__text h1 {
 		font-size: 90px;
 	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.hero__text h1 {
+		font-size: 90px;
+	}
+
 	.social__links {
-		
+
 		top: 20%;
 		left: 90%;
-		
+
 	}
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.social__links {
-		
+
 		top: 20%;
 		left: 87%;
-		
+
 	}
-	.hero__text h1{
+
+	.hero__text h1 {
 		font-size: 70px;
 	}
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-	.hero__text h1{
-		font-size: 50px;
-	}
-}
+
 @media only screen and (max-width: 479px) {
-	.hero__text h1{
+	.hero__text h1 {
 		font-size: 50px;
 	}
+
+	.social__links {
+
+		top: 20%;
+		left: 80%;
+
+	}
+
 	.single_player_container h4 {
 		font-size: 16px;
 	}
+
 	.player_bars {
 		width: 150px;
 		margin-right: 10px;
 	}
+
 	.player_controls_box {
 		margin-right: 10px;
 	}
+
 	.jp-volume-controls {
 		width: 68px;
 		padding-left: 23px;
 	}
+
 	.jp-volume-bar {
 		width: 42px;
 	}
+
 	.jp-seek-bar>div {
 		width: 55px;
 	}
 }
 
-
-@media only screen and (max-width: 767px) {
-	.player_bars {
-		width: 240px;
-		margin-right: 20px;
-	}
-	.jp-seek-bar>div {
-		width: 140px;
-	}
+/* ======= End_Responsive ======= */
