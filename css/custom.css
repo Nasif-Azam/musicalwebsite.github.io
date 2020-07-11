@@ -1,3 +1,12 @@
+/* Name:- Md.Nasif Azam
+   Phone:- +8801794814850
+   Mail:- cr7nasif99@gmail.com
+   FB link:- https://www.facebook.com/md.nasif850/
+   Website links:- https://nasif-azam.github.io/Nasif_web_designer.github.io/
+
+   https://nasif-azam.github.io/web_desinnger_team.github.io/
+*/
+
 /* ======= Fonts ======= */
 @import url('https://fonts.googleapis.com/css2?family=Fondamento&family=Galada&display=swap');
 /* ======= End_Fonts ======= */
@@ -373,21 +382,18 @@ ol {
 }
 
 .profile_pic img {
-	position: relative;
+	position: absolute;
 	display: flex;
 	justify-self: flex-start;
 	align-self: flex-start;
 	width: 200px;
 	height: 200px;
-	margin-top: -40px;
+	margin-top: -20px;
 	border-radius: 100%;
 }
 
-.hero__text h1{
-	/* padding-bottom: 189px; */
-}
 .hero__text {
-	
+	margin-top: 50px;
 	text-align: center;
 }
 
@@ -531,20 +537,9 @@ ol {
 /* ======= End_Hero ======= */
 
 /* ======= About ======= */
-
-.about {}
-
-.about.about--page .section-title {}
-
-.about.about--page .section-title h2 {}
-
-.about.about--page .about__text p {}
-
 .about__text a {
 	margin: 20px;
 }
-
-.about__text p {}
 
 /* ======= End_About ======= */
 
@@ -775,6 +770,15 @@ ol {
 	box-shadow: inset 5px 5px 10px rgba(204, 204, 204, 0.486),
 		inset -5px -5px 10px rgba(204, 204, 204, 0.486);
 
+}
+.contact .info p{
+	margin: 0;
+}
+.contact .info a{
+	color: #333;
+}
+.contact .info a:hover{
+	text-decoration: underline;
 }
 .contact .info img{
 	height: 200px;
@@ -1128,10 +1132,18 @@ ol {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-	.hero__text h1 {
-		font-size: 90px;
+	.hero__text{
+		margin-top: 50px;
 	}
-
+	.hero__text h1 {
+		font-size: 75px;
+		margin: 0;
+		padding: 0;
+	}
+	.profile_pic img{
+		height: 150px;
+		width: 150px;
+	}
 	.social__links {
 		top: 20%;
 		left: 90%;
@@ -1141,14 +1153,20 @@ ol {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.hero{
-		background: url(../images/cover1.jpg);
 		background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	}
+	.hero__text{
+		margin-top: 70px;
+	}
+	.hero__text h1 {
+		font-size: 50px;
+		margin: 0;
+	}
 	.profile_pic img{
-		height: 200px;
-		width: 200px;
+		height: 150px;
+		width: 150px;
 	}
 	.social__links {
 		top: 15%;
@@ -1156,11 +1174,11 @@ ol {
 
 	}
 
-	.hero__text h1 {
-		font-size: 70px;
-	}
+	
 }
-
+@media only screen and (min-width: 425) and (max-width: 768px) {
+	
+}
 @media only screen and (max-width: 479px) {
 	.hero{
 		background: url(../images/cover4.jpg);
@@ -1168,19 +1186,23 @@ ol {
 	background-repeat: no-repeat;
 	background-size: cover;
 	}
+	.hero__text{
+		margin-top: 120px;
+	}
 	.hero__text h1 {
 		font-size: 35px;
+		/* padding-bottom: 0; */
 	}
 
-	.social__links {
-		top: 15%;
-		left: 90%;
-	}
+	
 	.profile_pic img{
 		height: 100px;
 		width: 100px;
 	}
-
+	.social__links {
+		top: 15%;
+		left: 88%;
+	}
 	.single_player_container h4 {
 		font-size: 16px;
 	}

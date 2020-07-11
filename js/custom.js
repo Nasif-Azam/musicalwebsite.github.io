@@ -11,31 +11,40 @@ $('.set-bg').each(function () {
   $(this).css('background-image', 'url(' + bg + ')');
 });
 // End_Background_Set
-
-// Play Button
-var audio, playbtn, seek_bar;
-function initAudioPlayer(){
+var audio;
+function playFun(){
   audio = new Audio();
   audio.src = "music-files/main.m4a";
   audio.loop = false;
   audio.play();
-
-  playbtn = document.getElementById("playpausebtn");
-
-  playbtn.addEventListener("click", playpause);
-
-  function playpause(){
-    if(audio.paused){
-      audio.play();
-      playbtn.style.background = "url(../images/pause.png) no-repeat";
-    }
-    else{
-      audio.pause();
-      playbtn.style.background = "url(../images/pause.png) no-repeat";
-    }
-  }
 }
-window.addEventListener("load", initAudioPlayer);
+
+
+
+// Play Button
+// var audio, playbtn, seek_bar;
+// function initAudioPlayer(){
+//   audio = new Audio();
+//   audio.src = "music-files/main.m4a";
+//   audio.loop = false;
+//   audio.play();
+
+//   playbtn = document.getElementById("playpausebtn");
+
+//   playbtn.addEventListener("click", playpause);
+
+//   function playpause(){
+//     if(audio.paused){
+//       audio.play();
+//       playbtn.style.background = "url(../images/pause.png) no-repeat";
+//     }
+//     else{
+//       audio.pause();
+//       playbtn.style.background = "url(../images/pause.png) no-repeat";
+//     }
+//   }
+// }
+// window.addEventListener("load", initAudioPlayer);
 // Play Button
 
 // Nav
