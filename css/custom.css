@@ -775,6 +775,7 @@ ol {
 	margin: 0;
 }
 .contact .info a{
+	text-decoration: underline;
 	color: #333;
 }
 .contact .info a:hover{
